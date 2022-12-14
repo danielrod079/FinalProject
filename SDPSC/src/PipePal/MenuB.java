@@ -248,7 +248,7 @@ public class MenuB extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel11.setText("TOTAL GPM:");
 
-        jLabel12.setText("jLabel12");
+        
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -423,7 +423,6 @@ public class MenuB extends javax.swing.JFrame {
         double gpmCW = -(Math.pow(2, -9*(Math.pow(sumHW, 6))))+(Math.pow(6, -7*(Math.pow(sumHW, 5))))-(Math.pow(7, -5*(Math.pow(sumHW, 4))))+0.0041*(Math.pow(sumHW, 3))-0.1238*(Math.pow(sumHW, 2))+2.2616*sumHW+0.8128;
         double gpmHW = -(Math.pow(2, -9*(Math.pow(sumHW, 6))))+(Math.pow(6, -7*(Math.pow(sumHW, 5))))-(Math.pow(7, -5*(Math.pow(sumHW, 4))))+0.0041*(Math.pow(sumHW, 3))-0.1238*(Math.pow(sumHW, 2))+2.2616*sumHW+0.8128;
         double gpmT = -(Math.pow(2, -9*(Math.pow(sumT, 6))))+(Math.pow(6, -7*(Math.pow(sumT, 5))))-(Math.pow(7, -5*(Math.pow(sumT, 4))))+0.0041*(Math.pow(sumT, 3))-0.1238*(Math.pow(sumT, 2))+2.2616*sumT+0.8128;
-        jLabel12.setText(Double.toString(gpmCW));
         for (int i = 0; i < index.length; i++){
         if (gpmCW >= index[i]){
         sizeCW = sizes[i];
